@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden; /* Ngăn cuộn trang */
+        }
+        .marquee {
+            position: fixed;
+            bottom: 5px;
+            right: -200px; /* Bắt đầu bên ngoài màn hình */
+            font-size: 20px;
+            text-decoration: none;
+            animation: slide 30s linear infinite; /* Thay đổi thời gian nếu cần */
+        }
+
+        @keyframes slide {
+            0% {
+                right: -200px; /* Bắt đầu từ bên ngoài */
+            }
+            100% {
+                right: 100%; /* Kết thúc ở bên phải màn hình */
+            }
+        }
+    </style>
 </head>
-<body style="padding: 0; margin: 0;">
+<body>
     <div style="display: flex; flex-direction: column; align-items: center;">
         <img style="max-height: 100vh;" src="./assets/my.jpg" />
     </div>
-    <div style="position: fixed; bottom: 5px; right: 5px;">
-        <a style="text-decoration: none;" href="https://t.me/poremon">Telegram: @poremon</a>
+    <div class="marquee">
+        <a href="https://t.me/poremon">Telegram: @poremon</a>
     </div>
 </body>
 </html>
