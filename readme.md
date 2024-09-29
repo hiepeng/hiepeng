@@ -17,7 +17,6 @@
 
 <p align="center">
   <a href="https://t.me/poremon" target="_blank">
-    <img src="https://mona.solutions/telegram-la-gi-va-vi-sao-telegram-vuot-mat-whatsapp" alt="Telegram">
   </a>
 </p>
 
